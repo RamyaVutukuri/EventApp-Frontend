@@ -1,0 +1,21 @@
+<app-header></app-header>
+<h1>Upcoming Events</h1>
+<div class="container" fxLayout="column" fxLayoutAlign="center center" style="margin-left:100px;margin-right: 100px;">
+    <div class="card-container" fxLayout="row wrap" fxLayoutGap="100px">
+    <mat-card class="mat-card" *ngFor="let event of events">
+        <mat-card-header>
+            <mat-card-title>{{event.type | uppercase}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image [src]="getEventImage(event.type!)" height="150px">
+        <mat-card-content fxLayout="column" fxLayout="center center">
+            <p>Title : {{event.title}}</p>
+            <p>Venue Name : {{event.venue?.name}}</p>
+            <p>Venue State : {{event.venue?.state}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <mat-icon (click)="addToWishlist(event)" style="margin-left:45%;color:red">favorite</mat-icon>
+        </mat-card-actions>      
+    </mat-card>
+</div>
+</div>
+<app-footer></app-footer>

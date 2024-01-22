@@ -1,0 +1,33 @@
+.full-width {
+    width : 100%;
+}
+
+.bootstrap-wrapper {
+    justify-content: flex;
+    display: flex;
+}
+
+.row {
+    display :flex;
+    margin-left: 20%;
+    margin-top:28%;
+    height: 50%;
+    width: 80%; 
+    justify-content:flex-end;
+    place-items:center end;
+}
+
+.font-style {
+    display:flex;
+    justify-content: center;
+}
+
+.container text-center {
+    margin-left: 50%;
+}
+
+img{
+    margin-top: 30px;
+    height: 400px;
+    margin-left: 20px;
+}

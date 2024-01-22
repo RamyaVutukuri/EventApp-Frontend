@@ -1,0 +1,15 @@
+<mat-toolbar class="toolbar">
+  <div class="navbar-left">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToLEo1eyVWZReHmlTmP-UhjhqhM09e45s6hg6fnpP7KtLXrHDLXiAZt8jVX4-Iu67fSYE&usqp=CAU" alt="logo" class="logo">
+  </div>
+  <div class="navbar-right">
+    <ul class="nav-links">
+      <li><a *ngIf="!getLoginStatus()" routerLink="/register" style="margin-right:-10px">Sign Up</a></li>
+      <li><a *ngIf="!getLoginStatus()" routerLink="/login" style="margin-left:30px">Sign In</a></li>
+      <li><a *ngIf="getLoginStatus()" routerLink="/home" routerLinkActive="active"><mat-icon>home</mat-icon></a></li>
+      <li><a *ngIf="getLoginStatus()" routerLink="/events" routerLinkActive="active"><mat-icon>dashboard</mat-icon></a></li>
+      <li><a *ngIf="getLoginStatus()" routerLink="/wishlist" routerLinkActive="active"><mat-icon>favorite</mat-icon></a></li>
+      <li><a *ngIf="getLoginStatus()" (click)="logout()"><mat-icon>logout</mat-icon></a></li>
+    </ul>
+  </div>
+</mat-toolbar>

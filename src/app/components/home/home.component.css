@@ -1,0 +1,11 @@
+main {
+	text-align: center;
+    font-family: Copperplate Gothic Light;
+}
+.img {
+    background-image:url("https://static.vecteezy.com/system/resources/previews/011/787/326/original/upcoming-events-button-speech-bubble-upcoming-events-web-banner-template-illustration-vector.jpg");
+    background-size:cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height:455px;
+}

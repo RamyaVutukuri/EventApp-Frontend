@@ -1,0 +1,39 @@
+<app-header></app-header>
+<div class="img">
+    <div class="bootstrap-wrapper">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 offset-md-3">
+                    <mat-card>
+                        <mat-card-content>
+                            <h1 class="font-style">Login Here !</h1>
+                            <form (ngSubmit)="login()">
+                                <!-- username -->
+                                <mat-form-field class="full-width" appearance="outline">
+                                    <mat-label>Username</mat-label>
+                                    <input matInput [(ngModel)] ="user.username" name="username" placeholder="Enter Username">
+                                </mat-form-field>
+                                <!-- password -->
+                                <mat-form-field class="full-width" appearance="outline">
+                                    <mat-label>Password</mat-label>
+                                    <input matInput [(ngModel)]="user.password" name="password" type="password" placeholder="Enter Password">
+                                </mat-form-field>
+                                <br>
+                                <br>
+                                <div class="container text-center">
+                                    <button type="submit" style="margin-left:40%;background-color:blueviolet;" mat-raised-button color="primary">Login</button>
+                                </div>
+                            </form>
+                            <div style="text-align: center;">
+                                <label>Don't have an account? </label>
+                                <a href='/register'>Register</a>
+                            </div>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
